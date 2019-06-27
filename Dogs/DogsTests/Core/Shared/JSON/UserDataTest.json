@@ -1,0 +1,10 @@
+{
+    "user": {
+        "email": "your@email.com",
+        "_id": "5d12661ef7b0cf39e65def8e",
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJpZGRvZy1zZXJ2aWNlIiwic3ViIjoiNWQxMjY2MWVmN2IwY2YzOWU2NWRlZjhlIiwiaWF0IjoxNTYxNDg2ODc4LCJleHAiOjE1NjI3ODI4Nzh9.pOeT6SsG5H99b3yBlsHuuKna0X8vhMOHMAuKTQpRuSc",
+        "createdAt": "2019-06-25T18:21:18.644Z",
+        "updatedAt": "2019-06-25T18:21:18.644Z",
+        "__v": 0
+    }
+}
