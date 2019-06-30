@@ -15,4 +15,9 @@ class ParseForMockTest: XCTestCase {
         XCTAssert(user != nil, "It's an user.")
     }
 
+    func testObtainBreedForMock() {
+        let breed: Breed? = ParseForMock().parseData(fileName: "BreedDataTest", ofType: "json")
+        
+        XCTAssert(breed != nil, "It's a breed.")
+    }
 }
