@@ -7,6 +7,7 @@
 //
 
 import UIKit
+
 extension User {
     static var validUser: User {
         let user: User? = ParseForMock().parseData(fileName: "UserDataTest", ofType: "json")

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ADR-xz-vBP">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sign Up View Controller-->
+        <scene sceneID="W0o-lS-pgr">
+            <objects>
+                <viewController id="ADR-xz-vBP" customClass="SignUpViewController" customModule="Dogs" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oEx-GX-pyR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dogs" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kZ9-G9-w8S">
+                                <rect key="frame" x="163.5" y="36" width="48" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HRC-fX-9IR">
+                                <rect key="frame" x="16" y="159" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="ADR-xz-vBP" id="0hC-c3-tQX"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3TQ-vb-myo">
+                                <rect key="frame" x="16" y="205" width="343" height="40"/>
+                                <color key="backgroundColor" name="systemGreenColor" catalog="System" colorSpace="catalog"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="k0B-Iq-fwK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="Registrar">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="registerEmail:" destination="ADR-xz-vBP" eventType="touchUpInside" id="f3i-0J-960"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Registre-se com seu e-mail para ver todos os cães" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iSY-1z-RCW">
+                                <rect key="frame" x="16" y="115" width="343" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="kZ9-G9-w8S" firstAttribute="centerX" secondItem="PWI-Kz-Tsv" secondAttribute="centerX" id="0dN-cw-Pjn"/>
+                            <constraint firstItem="3TQ-vb-myo" firstAttribute="trailing" secondItem="HRC-fX-9IR" secondAttribute="trailing" id="5jC-GY-x2q"/>
+                            <constraint firstItem="iSY-1z-RCW" firstAttribute="top" secondItem="kZ9-G9-w8S" secondAttribute="bottom" constant="55" id="BTm-JC-h7L"/>
+                            <constraint firstItem="PWI-Kz-Tsv" firstAttribute="trailing" secondItem="HRC-fX-9IR" secondAttribute="trailing" constant="16" id="FoU-Tp-c4q"/>
+                            <constraint firstItem="HRC-fX-9IR" firstAttribute="top" secondItem="iSY-1z-RCW" secondAttribute="bottom" constant="8" id="LNg-UQ-zel"/>
+                            <constraint firstItem="HRC-fX-9IR" firstAttribute="leading" secondItem="PWI-Kz-Tsv" secondAttribute="leading" constant="16" id="LtX-Wg-QuY"/>
+                            <constraint firstItem="3TQ-vb-myo" firstAttribute="top" secondItem="HRC-fX-9IR" secondAttribute="bottom" constant="16" id="M8N-km-7N6"/>
+                            <constraint firstItem="iSY-1z-RCW" firstAttribute="centerX" secondItem="kZ9-G9-w8S" secondAttribute="centerX" id="W3Q-F4-yDZ"/>
+                            <constraint firstItem="3TQ-vb-myo" firstAttribute="leading" secondItem="HRC-fX-9IR" secondAttribute="leading" id="llS-GP-eWS"/>
+                            <constraint firstItem="iSY-1z-RCW" firstAttribute="trailing" secondItem="HRC-fX-9IR" secondAttribute="trailing" id="m1a-3X-UzW"/>
+                            <constraint firstItem="iSY-1z-RCW" firstAttribute="leading" secondItem="HRC-fX-9IR" secondAttribute="leading" id="sug-aC-OEC"/>
+                            <constraint firstItem="kZ9-G9-w8S" firstAttribute="top" secondItem="PWI-Kz-Tsv" secondAttribute="top" constant="16" id="tzN-3L-QoR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PWI-Kz-Tsv"/>
+                    </view>
+                    <connections>
+                        <outlet property="registerButton" destination="3TQ-vb-myo" id="pZz-9P-kj0"/>
+                        <outlet property="signupEmailTextField" destination="HRC-fX-9IR" id="fBC-nL-N1Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O2S-Hg-dcB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="88.799999999999997" y="43.628185907046479"/>
+        </scene>
+    </scenes>
+</document>

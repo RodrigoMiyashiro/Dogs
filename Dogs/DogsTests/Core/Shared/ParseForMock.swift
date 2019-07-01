@@ -20,7 +20,7 @@ class ParseForMock {
             responseData = try JSONDecoder().decode(T.self, from: data)
         }
         catch {
-            print("Deu bostcha...")
+            print("Error...")
         }
 
         return responseData
