@@ -55,11 +55,8 @@ extension BreedSummaryViewController: UICollectionViewDataSource, UICollectionVi
         }
 
         let breedPosition = cell.tag / valueForCalcPositionSectionAndRow
-        let dogPosition = cell.tag % valueForCalcPositionSectionAndRow
         let breed = breeds[breedPosition]
-        let dog = breed.dogs[dogPosition]
 
-        print("🕵️‍♂️ Breed: \(breed.category) | Dog: \(dog.url ?? "!@%!@#")")
         self.openDogDetail(cell.dogImageView.image, nameBreed: breed.category)
     }
 
