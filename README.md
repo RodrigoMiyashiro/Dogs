@@ -1,5 +1,5 @@
 # Dogs
-Dogs - Lista de cães das raças: husky, hound, pug, labrador.<br><br>
+Dogs - Lista de cães das raças: husky, hound, pug, labrador.
 
 Versão: 0.0.1<br>
 Linguagem: Swift<br>
